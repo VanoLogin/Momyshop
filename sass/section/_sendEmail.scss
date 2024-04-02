@@ -11,17 +11,17 @@
 .sending-email {
   background-color: var(--discount-color);
   @include tablet {
-    background: url(../../images/background/bgTablet.svg);
+    background: url(../images/background/bgTablet.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
   @include desktop {
-    background: url(../../images/background/bgDesk.svg);
+    background: url(../images/background/bgDesk.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
   @include biggest {
-    background: url(../../images/background/bgBiggest.svg);
+    background: url(../images/background/bgBiggest.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
