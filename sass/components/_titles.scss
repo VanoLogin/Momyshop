@@ -1,0 +1,140 @@
+.sub-title {
+  color: #fff;
+
+  /* subtitle */
+  font-family: Comfortaa;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.header-title-text {
+  /* h_mobile */
+  font-family: Comfortaa;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  @include tablet {
+    font-size: 20px;
+  }
+}
+
+.main-card-text {
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  @include tablet {
+    font-size: 15px;
+  }
+}
+
+.diskount-price-text {
+  color: var(--discount-color);
+  font-family: Comfortaa;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  @include tablet {
+    font-size: 17px;
+  }
+}
+.price-text {
+  color: #202020;
+  font-family: Comfortaa;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: strikethrough;
+
+  @include tablet {
+    font-size: 14px;
+  }
+}
+
+.prices-span {
+  color: #202020;
+  font-family: Comfortaa;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration-line: strikethrough;
+  @include tablet {
+    font-size: 14px;
+  }
+}
+
+.diskount-price-span {
+  color: #f99c11;
+  font-family: Comfortaa;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  @include tablet {
+    font-size: 17px;
+  }
+}
+
+.href-number {
+  color: #fff;
+
+  /* h_mobile */
+  font-family: Comfortaa;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  @include tablet {
+    font-size: 20px;
+  }
+}
+
+.white-color-text {
+  color: #fff;
+}
+
+.gray-color-text {
+  color: #585858;
+}
+
+.new-price-title {
+  color: var(--discount, #f99c11);
+  font-family: Comfortaa;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.diskount-price {
+  color: #fff;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 5px;
+  background-color: var(--discount, #f99c11);
+  padding: 7px;
+}
+
+.margin-left {
+  margin-left: 16px;
+}
+
+.line-height-bigger {
+  line-height: 25px;
+}
+
+
+.line-through {
+  text-decoration: line-through;
+}

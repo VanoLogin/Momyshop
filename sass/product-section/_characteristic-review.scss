@@ -1,0 +1,201 @@
+.characteristic-review {
+  background-color: var(--lightpurple, #ffeaf1);
+  & > .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include tablet {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
+}
+
+.description-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-left: 16px;
+  width: 328px;
+  align-self: stretch;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 35px 30px;
+  & > img {
+    width: 270px;
+    height: 250px;
+    border-radius: 10px;
+  }
+  @include tablet {
+    width: 650px;
+    display: block;
+  }
+}
+
+.view-more-content {
+  color: var(--accent, #d03664);
+  text-align: center;
+  font-family: Comfortaa;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  background-color: inherit;
+  @include tablet {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.description-hidden {
+  display: flex;
+  margin-bottom: 20px;
+}
+.svg-hidden-text {
+  background-color: inherit;
+  margin-left: auto;
+  margin-right: 16px;
+}
+
+//characteristic-description card-characteristic
+.card-characteristic {
+  margin-top: 50px;
+  margin-left: 16px;
+}
+.characteristic-description {
+  margin-top: 20px;
+  width: 328px;
+  align-self: stretch;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 35px 30px;
+  @include tablet {
+    width: 650px;
+  }
+}
+
+// чат ё
+.characteristic-list {
+  display: block;
+}
+.characteristic-item {
+  display: flex;
+  justify-content: space-between;
+  color: #9da4bd;
+  align-items: baseline;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  &::after {
+    content: "";
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.12);
+    flex-grow: 1;
+    margin: 0 12px;
+  }
+}
+.characteristic-paragraph-title:last-child {
+  order: 1;
+}
+
+.characteristic-paragraph-title {
+  color: #000;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+//review raiting  feedback
+.feedback-container {
+  margin-left: 16px;
+  margin-top: 50px;
+}
+
+.raiting-text {
+  color: #000;
+
+  /* subtitle_mobile */
+  font-family: Comfortaa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.leave-feedback-btn {
+  margin-top: 30px;
+  border-radius: 10px;
+  background: var(--accent, #d03664);
+  padding: 30px;
+  color: #fff;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.raiting-wraper {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+
+//feedback items list
+.feedback-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Создает две колонки */
+    gap: 10px; /* Необязательно: добавляет промежуток между элементами */
+
+    gap: 30px;
+  }
+}
+.feedback-item {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 30px;
+  width: 270px;
+  @include tel {
+    width: 390px;
+  }
+  @include tablet {
+    width: 290px;
+  }
+  & > p {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px; /* 166.667% */
+  }
+}
+
+.feedback-name {
+  color: #000;
+  font-family: Comfortaa;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.more-content {
+  display: block;
+  margin: 0 auto;
+}
+
+.container-feedback-list {
+  flex-wrap: wrap;
+  display: flex;
+}

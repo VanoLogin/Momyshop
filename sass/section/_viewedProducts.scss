@@ -1,0 +1,17 @@
+.viewed-products {
+    margin-bottom: 60px;
+    margin-top: 60px;
+    @include tablet {
+        margin-bottom: 80px;
+    }
+    @include biggest {
+        margin-bottom: 87px;
+    }
+}
+.viewed-header {
+    margin-left: 16px;
+}
+.viewed-container {
+    margin-top: 30px;
+    margin-left: 16px;
+}

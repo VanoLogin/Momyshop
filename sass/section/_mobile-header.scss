@@ -1,0 +1,94 @@
+.mobile-header {
+  width: 100%;
+  height: 60px;
+  background-color: var(--header-color);
+
+
+  & .container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+   padding: 20px 0 20px 0;
+    @include tel {
+      justify-content: space-between;
+      gap: 60px;
+    }
+    @include tablet {
+        justify-content: center;
+        gap: 30px;
+    }
+  }
+  @include tablet {
+    height: 75px;
+  }
+  @include biggest {
+   display: none;
+  }
+}
+
+.btn-burger {
+  background-color: inherit;
+  border: none;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.logo-tel {
+  display: inline-block;
+  margin-left: 20px;
+  width: 90px;
+  height: 20px;
+  @include tablet {
+    width: 138px;
+  height: 32px;
+  margin-left: 30px;
+
+  }
+}
+
+.header-link-list {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-right: 16px;
+  @include tel {
+    margin-right: 0;
+  }
+  @include tablet{
+    gap: 30px;
+    margin-left: 20px;
+  }
+  @include biggest {
+    margin-left: 30px;
+  }
+}
+.wrap {
+  display: flex;
+  align-items: center;
+}
+
+.cart-buy {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -5px;
+  right: -7px;
+  background-color: var(--discount-color);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  @include biggest {
+    top: 4px;
+  }
+}
+
+.search-form-icon {
+  display: block;
+  @include tablet {
+    display: none;
+  }
+}

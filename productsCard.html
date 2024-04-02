@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProductsCard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="information-contact">
+          <a href="/index.html" class="logo-tel desktop-logo"
+            ><img src="./images/logo/logo-desk.svg" alt="logo"
+          /></a>
+          <ul class="navigation-list">
+            <li><a href="#" class="navigation-link">Про нас</a></li>
+            <li><a href="#" class="navigation-link">Контакти</a></li>
+            <li><a href="#" class="navigation-link">Доставка і оплата</a></li>
+            <li><a href="#" class="navigation-link">Повернення і обмін </a></li>
+          </ul>
+
+          <ul class="navigation-soc-list">
+            <a href="+380631284609" class="navigation-tel sub-title"
+              >(063) 128-46-09</a
+            >
+            <li>
+              <a href="#" class="navigation-soc-link"
+                ><svg width="20" height="20">
+                  <use href="./images/sprite.svg#instagram"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="navigation-soc-link"
+                ><svg width="23" height="15">
+                  <use href="./images/sprite.svg#youtube"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="navigation-soc-link">
+                <svg width="10" height="20">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="change-lang-span">
+            <span>Укр</span>
+            <span>Рус</span>
+            <button class="btn-join"><a href="">Вхiд</a></button>
+          </div>
+        </div>
+        <div class="wraper-search">
+          <button class="btn-catalog sub-title" id="btn-catalog">
+            КАТАЛОГ
+          </button>
+          <div class="form-container">
+            <form class="search-form">
+              <input type="text" placeholder="Я шукаю..." />
+              <button type="submit" class="btn-search"></button>
+            </form>
+            <ul class="header-link-list">
+              <li class="header-links search-form-icon">
+                <a href="#">
+                  <svg width="18" height="18">
+                    <use href="./images/sprite.svg#icon-search"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-links">
+                <a href="#">
+                  <svg width="29" height="19">
+                    <use href="./images/sprite.svg#icon-comparison"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-links">
+                <a href="#">
+                  <svg width="23" height="19">
+                    <use href="./images/sprite.svg#icon-Frame"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-links">
+                <a href="#">
+                  <svg width="27" height="19">
+                    <use href="./images/sprite.svg#icon-cart"></use>
+                    <span class="cart-buy">1</span>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="mobile-header">
+        <div class="container">
+          <div class="wrap">
+            <button class="btn-burger">
+              <svg width="30" height="18">
+                <use href="./images/sprite.svg#icon-menu"></use>
+              </svg>
+            </button>
+            <a href="./index.html" class="logo-tel"
+              ><img src="./images/logo/logo-desk.svg" alt="logo"
+            /></a>
+          </div>
+          <div class="form-container">
+            <form class="search-form">
+              <input type="text" placeholder="Я шукаю..." />
+              <button type="submit"></button>
+            </form>
+          </div>
+
+          <ul class="header-link-list">
+            <li class="header-links search-form-icon">
+              <a href="#">
+                <svg width="18" height="18">
+                  <use href="./images/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-links">
+              <a href="#">
+                <svg width="29" height="19">
+                  <use href="./images/sprite.svg#icon-comparison"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-links">
+              <a href="#">
+                <svg width="23" height="19">
+                  <use href="./images/sprite.svg#icon-Frame"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-links">
+              <a href="#">
+                <svg width="27" height="19">
+                  <use href="./images/sprite.svg#icon-cart"></use>
+                  <span class="cart-buy">1</span>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="catalog-header">
+        <div class="container">
+          <div class="links-wrap">
+            <a href="/index.html">
+              <p class="main-card-text header-color">Головна ></p>
+            </a>
+            <a href="/catalog.html">
+              <p class="main-card-text header-color">Дитячі коляски ></p>
+            </a>
+          </div>
+
+          <h3 class="header-title-text">Коляска 2в1 Anex M/Type Dune mt-01Q</h3>
+          <div class="button-wraper">
+            <a class="add-to-favorites">У вибране</a>
+            <a class="add-to-trim">Порівняти</a>
+          </div>
+
+          <div class="code-container">
+            <p class="in-stock">В наявності</p>
+            <p class="code-product">Код: EP-01</p>
+            <span class="raiting-product">4.5</span>
+          </div>
+          <div class="slider">
+            <swiper-container class="mySwiper" navigation="true">
+              <swiper-slide
+                ><img
+                  src="./images/products-proposition/childCar.jpg"
+                  alt="products"
+              /></swiper-slide>
+              <swiper-slide
+                ><img
+                  src="./images/products-proposition/childCar.jpg"
+                  alt="products"
+              /></swiper-slide>
+              <swiper-slide
+                ><img
+                  src="./images/products-proposition/childCar.jpg"
+                  alt="products" /></swiper-slide
+              ><swiper-slide
+                ><img
+                  src="./images/products-proposition/childCar.jpg"
+                  alt="products" /></swiper-slide
+              ><swiper-slide
+                ><img
+                  src="./images/products-proposition/childCar.jpg"
+                  alt="products"
+              /></swiper-slide>
+            </swiper-container>
+          </div>
+          <div class="buying-container">
+            <div class="choosing-margin">
+              <p class="main-card-text gray-color-text p-margin">Колір:</p>
+              <button class="product-color_blue"></button>
+              <button class="product-color_red"></button>
+              <button class="product-color_green"></button>
+            </div>
+            <div class="choosing-margin">
+              <p class="main-card-text gray-color-text p-margin">Стать:</p>
+              <button class="choosing-male main-card-text" id="boy" active>
+                Хлопчик
+              </button>
+              <button class="choosing-male main-card-text" id="girl">
+                Дівчинка
+              </button>
+            </div>
+            <div class="product-price choosing-margin">
+              <span class="header-title-text line-through">6000 грн</span>
+              <span class="new-price-title">5000 грн</span>
+              <span class="diskount-price">-15%</span>
+            </div>
+            <div class="btn-buy-product choosing-margin">
+              <button class="button-buying-active button-buying-before" active>
+                КУПИТИ
+              </button>
+              <button class="button-buying">Купити в 1 клік</button>
+            </div>
+
+            <div class="shop-location">
+              <p class="shop-location-title">
+                Ви з Одеси? Заберіть товар у магазині
+              </p>
+              <a href="#" class="shop-location-adress"
+                >Одеса, вул. Михайлівська, 8 (10:00-19:00 щодня)</a
+              ><a href="#" class="shop-fast-buying">Забрати сьогодні</a>
+            </div>
+            <div class="buying-information">
+              <a href="#" class="buying-information-link">Оплата і доставка</a>
+              <a href="#" Оплата і доставкаclass="buying-information-link"
+                >Повернення і обмін</a
+              >
+              <a href="#" class="buying-information-link">Контакти</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="also-buying-with">
+        <div class="container">
+          <h3 class="header-title-text">З цим також купляють</h3>
+          <div class="product-wiper-container">
+            <div class="swiper-wrapper">
+              <!-- Слайды карусели -->
+      <!-- <div class="swiper-slide">
+                <li class="promotion-goods-item">
+                  <a href="/productsCard.html"
+                    ><p class="quantity-diskount">-15%</p>
+                    <img src="./images/promotion/stroller.jpg" alt="product" />
+                    <h3 class="cards-text main-card-text">
+                      Коляска 2в1 Anex M/Type Dune mt-01Q
+                    </h3>
+                    <p class="price-text price-text-margin">
+                      6000 <span class="prices-span"> грн</span>
+                    </p>
+                    <p class="diskount-price-text">
+                      5000<span class="diskount-price-span"> грн</span>
+                    </p></a
+                  >
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="promotion-goods-item">
+                  <a href="/productsCard.html"
+                    ><p class="quantity-diskount">-15%</p>
+                    <img src="./images/promotion/stroller.jpg" alt="product" />
+                    <h3 class="cards-text main-card-text">
+                      Коляска 2в1 Anex M/Type Dune mt-01Q
+                    </h3>
+                    <p class="price-text price-text-margin">
+                      6000 <span class="prices-span"> грн</span>
+                    </p>
+                    <p class="diskount-price-text">
+                      5000<span class="diskount-price-span"> грн</span>
+                    </p></a
+                  >
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="promotion-goods-item">
+                  <a href="/productsCard.html"
+                    ><p class="quantity-diskount">-15%</p>
+                    <img src="./images/promotion/stroller.jpg" alt="product" />
+                    <h3 class="cards-text main-card-text">
+                      Коляска 2в1 Anex M/Type Dune mt-01Q
+                    </h3>
+                    <p class="price-text price-text-margin">
+                      6000 <span class="prices-span"> грн</span>
+                    </p>
+                    <p class="diskount-price-text">
+                      5000<span class="diskount-price-span"> грн</span>
+                    </p></a
+                  >
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="promotion-goods-item">
+                  <a href="/productsCard.html"
+                    ><p class="quantity-diskount">-15%</p>
+                    <img src="./images/promotion/stroller.jpg" alt="product" />
+                    <h3 class="cards-text main-card-text">
+                      Коляска 2в1 Anex M/Type Dune mt-01Q
+                    </h3>
+                    <p class="price-text price-text-margin">
+                      6000 <span class="prices-span"> грн</span>
+                    </p>
+                    <p class="diskount-price-text">
+                      5000<span class="diskount-price-span"> грн</span>
+                    </p></a
+                  >
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="promotion-goods-item">
+                  <a href="/productsCard.html"
+                    ><p class="quantity-diskount">-15%</p>
+                    <img src="./images/promotion/stroller.jpg" alt="product" />
+                    <h3 class="cards-text main-card-text">
+                      Коляска 2в1 Anex M/Type Dune mt-01Q
+                    </h3>
+                    <p class="price-text price-text-margin">
+                      6000 <span class="prices-span"> грн</span>
+                    </p>
+                    <p class="diskount-price-text">
+                      5000<span class="diskount-price-span"> грн</span>
+                    </p></a
+                  >
+                </li>
+              </div>
+              <!-- Добавьте остальные карточки товаров здесь
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section class="characteristic-review">
+        <div class="container">
+          <div class="description-hidden">
+            <h3 class="header-title-text margin-left">Опис</h3>
+            <button class="svg-hidden-text">
+              <svg class="" width="16" height="10">
+                <use href="./images/sprite.svg#hidden-text"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="description-container">
+            <p class="main-card-text line-height-bigger">
+              Ключові особливості колекції m/type PRO зосереджені на зручність
+              для батьків і комфорт для дітей. Ця модель дозволяє однаково
+              насолоджуватися прогулянками міськими вуличками і лісовими
+              стежками.
+            </p>
+            <img
+              src="images/characteristics/image_1.webp"
+              alt="photo of category"
+            />
+            <p class="main-card-text line-height-bigger">
+              Легке зняття люльки. Для цього досить і однієї руки. Адже система
+              пам'яті адаптерів буде утримувати кнопки натиснутими, поки люльку
+              не знімуть.
+            </p>
+            <img
+              src="images/characteristics/image_1.webp"
+              alt="photo of category"
+            />
+            <button class="view-more-content">Докладніше</button>
+          </div>
+
+          <div class="card-characteristic">
+            <div class="description-hidden">
+              <h3 class="header-title-text margin-left">Характеристики</h3>
+              <button class="svg-hidden-text">
+                <svg class="" width="16" height="10">
+                  <use href="./images/sprite.svg#hidden-text"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="characteristic-description">
+              <ul class="characteristic-list">
+                <li class="characteristic-item">
+                  <p class="characteristic-paragraph-title">Виробник</p>
+                  <p class="characteristic-paragraph-title">Anex</p>
+                </li>
+                <li class="characteristic-item">
+                  <p class="characteristic-paragraph-title">Країна</p>
+                  <p class="characteristic-paragraph-title">Польща</p>
+                </li>
+                <li class="characteristic-item">
+                  <p class="characteristic-paragraph-title">Колір</p>
+                  <p class="characteristic-paragraph-title">Сірий</p>
+                </li>
+                <li class="characteristic-item">
+                  <p class="characteristic-paragraph-title">Стать</p>
+                  <p class="characteristic-paragraph-title">Хлопчик/дівчинка</p>
+                </li>
+                <li class="characteristic-item">
+                  <p class="characteristic-paragraph-title">Вага</p>
+                  <p class="characteristic-paragraph-title">14 кг</p>
+                </li>
+                <li class="characteristic-item">
+                  <p class="characteristic-paragraph-title">Розмір (ДхШхВ)</p>
+                  <p class="characteristic-paragraph-title">
+                    108.5х60х124.5 см
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="feedback-container">
+            <div class="raiting-review">
+              <div class="raiting-wraper">
+                <span class="header-title-text">Відгуки (9)</span>
+                <p class="raiting-text">Рейтинг:</p>
+                <span class="raiting-product">4.5</span>
+              </div>
+              <button class="leave-feedback-btn">+ Написати відгук</button>
+            </div>
+          </div>
+          <div class="container-feedback-list">
+            <ul class="feedback-list">
+              <li class="feedback-item">
+                <p>20.09.22</p>
+                <h4 class="feedback-name">Оля</h4>
+                <p>
+                  Оказалась, очень удобной для малыша со скрытым копюшоном
+                  батискафом, для родителей лёгкой и маневренной. Ещё
+                  немаловажными плюсами являются маленькими габаритами в
+                  сложенном состоянии и легко снять весь текстиль для стирки. Из
+                  минусов только то что в комплектации нет маскитки, дождивика и
+                  чехла на ножки.
+                </p>
+              </li>
+              <li class="feedback-item">
+                <p>20.09.22</p>
+                <h4 class="feedback-name">Оля</h4>
+                <p>
+                  Купили эту модель коляски в июне месяце, когда сыну было 9
+                  месяцев. ю Оказалась, очень удобной для малыша со скрытым
+                  копюшоном батискафом, для родителей лёгкой и маневренной. Ещё
+                  немаловажными плюсами являются маленькими габаритами в
+                  сложенном состоянии и легко снять весь текстиль для стирки. Из
+                  минусов только то что в комплектации нет маскитки, дождивика и
+                  чехла на ножки.
+                </p>
+              </li>
+              <li class="feedback-item">
+                <p>20.09.22</p>
+                <h4 class="feedback-name">Оля</h4>
+                <p>
+                  Оказалась, очень удобной для малыша со скрытым копюшоном
+                  батискафом, для родителей лёгкой и маневренной.
+                </p>
+              </li>
+              <li class="feedback-item">
+                <p>20.09.22</p>
+                <h4 class="feedback-name">Оля</h4>
+                <p>
+                  Купили эту модель коляски в июне месяце, когда сыну было 9
+                  месяцев. Оказалась, очень удобной для малыша со скрытым
+                  копюшоном батискафом, для родителей лёгкой и маневренной.
+                </p>
+              </li>
+              <li class="feedback-item">
+                <p>20.09.22</p>
+                <h4 class="feedback-name">Оля</h4>
+                <p>
+                  Купили эту модель коляски в июне месяце, когда сыну было 9
+                  месяцев.
+                </p>
+              </li>
+              <li class="feedback-item">
+                <p>20.09.22</p>
+                <h4 class="feedback-name">Оля</h4>
+                <p>
+                  Оказалась, очень удобной для малыша со скрытым копюшоном
+                  батискафом, для родителей лёгкой и маневренной. Купили эту
+                  модель коляски в июне месяце, когда сыну было 9 месяцев.
+                  Оказалась, очень удобной для малыша со скрытым копюшоном
+                  батискафом, для родителей лёгкой и маневренной.
+                </p>
+              </li>
+            </ul>
+
+            <button class="view-more-content more-content">
+              Показати більше
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="viewed-products">
+        <div class="container">
+          <h3 class="header-title-text viewed-header">Ви переглядали</h3>
+          <div class="viewed-container">
+            <ul class="viewed-list">
+              <li class="promotion-goods-item">
+                <a href="/productsCard.html"
+                  ><p class="quantity-diskount">-15%</p>
+                  <img src="./images/promotion/stroller.jpg" alt="product" />
+                  <h3 class="cards-text main-card-text">
+                    Коляска 2в1 Anex M/Type Dune mt-01Q
+                  </h3>
+                  <p class="price-text price-text-margin">
+                    6000 <span class="prices-span"> грн</span>
+                  </p>
+                  <p class="diskount-price-text">
+                    5000<span class="diskount-price-span"> грн</span>
+                  </p></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="sending-email">
+        <div class="container">
+          <div class="sending-container">
+            <h3 class="header-title-text sending-header">
+              Отримуйте ПРОМОКОДИ ТА <br />ЕКСКЛЮЗИВНІ ПРОПОЗИЦІЇ
+            </h3>
+            <div class="sending-wraper">
+              <input
+                type="email"
+                class="sending-input"
+                placeholder="Ваш email"
+              />
+              <button type="button" class="sending-button">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#vector"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <img
+            src="./images/brands-logo/mother_and_sun.png"
+            alt="mother and sun"
+            class="mother-png"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="contacts-section">
+        <div class="container">
+          <div class="contact-wrap">
+            <address>
+              <ul class="contacts-list">
+                <li class="contacts-item">
+                  <a
+                    href="+380631284609"
+                    class="contacts-link contacts-underline"
+                    >(063)128-46-09</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a href="bubu.shop2018@gmail.com" class="contacts-link"
+                    >bubu.shop2018@gmail.com</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a
+                    href="https://maps.app.goo.gl/KofwK4rMLrfXt6TR6"
+                    class="contacts-link"
+                    >Одеса, вул. Михайлівська 8 (щодня з 10:00 до 20:00)</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="#">
+                  <svg width="12" height="22">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="#">
+                  <svg width="20" height="20">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="#">
+                  <svg width="26" height="22">
+                    <use href="./images/sprite.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="information-section">
+        <div class="container">
+          <div class="container-wrap">
+            <div class="contacts-block">
+              <address>
+                <ul class="contacts-list">
+                  <li class="contacts-item">
+                    <a
+                      href="+380631284609"
+                      class="contacts-link contacts-underline"
+                      >(063)128-46-09</a
+                    >
+                  </li>
+                  <li class="contacts-item">
+                    <a href="bubu.shop2018@gmail.com" class="contacts-link"
+                      >bubu.shop2018@gmail.com</a
+                    >
+                  </li>
+                  <li class="contacts-item">
+                    <a
+                      href="https://maps.app.goo.gl/KofwK4rMLrfXt6TR6"
+                      class="contacts-link"
+                      >Одеса, вул. Михайлівська 8<br />
+                      (щодня з 10:00 до 20:00)</a
+                    >
+                  </li>
+                </ul>
+              </address>
+              <ul class="social-list">
+                <li class="social-item">
+                  <a href="#">
+                    <svg width="12" height="22">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#">
+                    <svg width="26" height="22">
+                      <use href="./images/sprite.svg#youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="information-container">
+              <h3 class="header-title-text header-information">Інформація</h3>
+              <ul class="information-list">
+                <li class="information-item">
+                  <a href="#" class="main-card-text white-color-text"
+                    >Про нас</a
+                  >
+                </li>
+                <li class="information-item">
+                  <a href="#" class="main-card-text white-color-text"
+                    >Контакти</a
+                  >
+                </li>
+                <li class="information-item">
+                  <a href="#" class="main-card-text white-color-text"
+                    >Доставка і оплата</a
+                  >
+                </li>
+                <li class="information-item">
+                  <a href="#" class="main-card-text white-color-text"
+                    >Повернення та обмін</a
+                  >
+                </li>
+                <li class="information-item">
+                  <a href="#" class="main-card-text white-color-text"
+                    >Політика конфеденційності</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="catalog-container">
+              <div class="catalog-container-first">
+                <h3 class="header-title-text header-catalog white-color-text">
+                  Каталог
+                </h3>
+                <ul class="catalog-list-first">
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Дитяча кімната
+                    </a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Стільці і шезлонги
+                    </a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Все для годування
+                    </a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Гігієна та догляд</a
+                    >
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Дитячі коляски
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="catalog-container-second">
+                <ul class="catalog-list-second">
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Автокрісла
+                    </a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Дитячий <br />
+                      транспорт
+                    </a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Іграшки
+                    </a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Дитячий одяг
+                    </a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Новий товар
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="bank-wrap">
+            <p class="rights-reserved">© Bubu 2022. Всі права захищені.</p>
+            <div class="bank-container">
+              <img
+                src="./images/brands-logo/liqpay.svg"
+                alt="liqpay"
+                class="banks-img"
+              />
+              <img
+                src="./images/brands-logo/master-card.svg"
+                alt="master-card"
+                class="banks-img"
+              />
+              <img
+                src="./images/brands-logo/visa.svg"
+                alt="visa"
+                class="banks-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProductsCard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="information-contact">
+          <a href="/index.html" class="logo-tel desktop-logo"
+            ><img src="./images/logo/logo-desk.svg" alt="logo"
+          /></a>
+          <ul class="navigation-list">
+            <li><a href="#" class="navigation-link">Про нас</a></li>
+            <li><a href="#" class="navigation-link">Контакти</a></li>
+            <li><a href="#" class="navigation-link">Доставка і оплата</a></li>
+            <li><a href="#" class="navigation-link">Повернення і обмін </a></li>
+          </ul>
+
+          <ul class="navigation-soc-list">
+            <a href="+380631284609" class="navigation-tel sub-title"
+              >(063) 128-46-09</a
+            >
+            <li>
+              <a href="#" class="navigation-soc-link"
+                ><svg width="20" height="20">
+                  <use href="./images/sprite.svg#instagram"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="navigation-soc-link"
+                ><svg width="23" height="15">
+                  <use href="./images/sprite.svg#youtube"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="navigation-soc-link">
+                <svg width="10" height="20">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="change-lang-span">
+            <span>Укр</span>
+            <span>Рус</span>
+            <button class="btn-join"><a href="">Вхiд</a></button>
+          </div>
+        </div>
+        <div class="wraper-search">
+          <button class="btn-catalog sub-title" id="btn-catalog">
+            КАТАЛОГ
+          </button>
+          <div class="form-container">
+            <form class="search-form">
+              <input type="text" placeholder="Я шукаю..." />
+              <button type="submit" class="btn-search"></button>
+            </form>
+            <ul class="header-link-list">
+              <li class="header-links search-form-icon">
+                <a href="#">
+                  <svg width="18" height="18">
+                    <use href="./images/sprite.svg#icon-search"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-links">
+                <a href="#">
+                  <svg width="29" height="19">
+                    <use href="./images/sprite.svg#icon-comparison"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-links">
+                <a href="#">
+                  <svg width="23" height="19">
+                    <use href="./images/sprite.svg#icon-Frame"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-links">
+                <a href="#">
+                  <svg width="27" height="19">
+                    <use href="./images/sprite.svg#icon-cart"></use>
+                    <span class="cart-buy">1</span>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="mobile-header">
+        <div class="container">
+          <div class="wrap">
+            <button class="btn-burger">
+              <svg width="30" height="18">
+                <use href="./images/sprite.svg#icon-menu"></use>
+              </svg>
+            </button>
+            <a href="#" class="logo-tel"
+              ><img src="./images/logo/logo-desk.svg" alt="logo"
+            /></a>
+          </div>
+          <div class="form-container">
+            <form class="search-form">
+              <input type="text" placeholder="Я шукаю..." />
+              <button type="submit"></button>
+            </form>
+          </div>
+
+          <ul class="header-link-list">
+            <li class="header-links search-form-icon">
+              <a href="#">
+                <svg width="18" height="18">
+                  <use href="./images/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-links">
+              <a href="#">
+                <svg width="29" height="19">
+                  <use href="./images/sprite.svg#icon-comparison"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-links">
+              <a href="#">
+                <svg width="23" height="19">
+                  <use href="./images/sprite.svg#icon-Frame"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-links">
+              <a href="#">
+                <svg width="27" height="19">
+                  <use href="./images/sprite.svg#icon-cart"></use>
+                  <span class="cart-buy">1</span>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="filter">
+        <div class="container">
+          <div class="title-home-div">
+            <a href="/index.html" class="main-card-text title-home">Головна ></a>
+          </div>
+         
+          <div class="filter-container">
+            <h3 class="header-title-text header-text">Дитячі Коляски</h3>
+            <div class="btn-filter-container">
+              <button class="btn-sort-filter main-card-text" id="1">
+                За замовчуванням
+              </button>
+              <button class="btn-sort-filter main-card-text" id="2">
+                По популярності
+              </button>
+              <button class="btn-sort-filter main-card-text" id="3">
+                Дешевші
+              </button>
+              <button class="btn-sort-filter main-card-text" id="4">
+                Дорожчі
+              </button>
+            </div>
+          </div>
+          <button class="btn-filter main-card-text">Фільтр</button>
+          <div class="filter-wrap">
+            <ul class="promotion-list filter-list">
+              <li class="promotion-goods-item">
+                <p class="quantity-diskount">-15%</p>
+                <img src="./images/promotion/stroller.jpg" alt="product" />
+                <h3 class="cards-text main-card-text">
+                  Коляска 2в1 Anex M/Type Dune mt-01Q
+                </h3>
+                <p class="price-text price-text-margin">
+                  6000 <span class="prices-span"> грн</span>
+                </p>
+                <p class="diskount-price-text">
+                  5000<span class="diskount-price-span"> грн</span>
+                </p>
+              </li>
+              <li class="promotion-goods-item">
+                <p class="quantity-diskount">-30%</p>
+                <img src="./images/promotion/ball.jpg" alt="product" />
+                <h3 class="cards-text main-card-text">
+                  Іграшка-головоломка Same Toy IQ Ball Cube
+                </h3>
+                <p class="price-text price-text-margin">
+                  300 <span class="prices-span"> грн</span>
+                </p>
+                <p class="diskount-price-text">
+                  200<span class="diskount-price-span"> грн</span>
+                </p>
+              </li>
+              <li class="promotion-goods-item">
+                <p class="quantity-diskount">-25%</p>
+                <img src="./images/promotion/bottle.jpg" alt="product" />
+                <h3 class="cards-text main-card-text">Пляшечка 130 мл</h3>
+                <p class="price-text price-text-margin">
+                  150 <span class="prices-span"> грн</span>
+                </p>
+                <p class="diskount-price-text">
+                  100<span class="diskount-price-span"> грн</span>
+                </p>
+              </li>
+              <li class="promotion-goods-item">
+                <p class="quantity-diskount">-10%</p>
+                <img src="./images/promotion/foods.jpg" alt="product" />
+                <h3 class="cards-text main-card-text">
+                  Суміш молочна суха Nutrilon для...
+                </h3>
+                <p class="price-text price-text-margin">
+                  350 <span class="prices-span"> грн</span>
+                </p>
+                <p class="diskount-price-text">
+                  300<span class="diskount-price-span"> грн</span>
+                </p>
+              </li>
+              <li class="promotion-goods-item">
+                <p class="quantity-diskount">-20%</p>
+                <img src="./images/promotion/carseat.jpg" alt="product" />
+                <h3 class="cards-text main-card-text">
+                  Автокрісло Maxi-Cosi Citi Concrete grey
+                </h3>
+                <p class="price-text price-text-margin">
+                  4300 <span class="prices-span"> грн</span>
+                </p>
+                <p class="diskount-price-text">
+                  3999<span class="diskount-price-span"> грн</span>
+                </p>
+              </li>
+              <li class="promotion-goods-item">
+                <p class="quantity-diskount">-15%</p>
+                <img src="./images/promotion/stroller.jpg" alt="product" />
+                <h3 class="cards-text main-card-text">
+                  Коляска 2в1 Anex M/Type Dune mt-01Q
+                </h3>
+                <p class="price-text price-text-margin">
+                  6000 <span class="prices-span"> грн</span>
+                </p>
+                <p class="diskount-price-text">
+                  5000<span class="diskount-price-span"> грн</span>
+                </p>
+              </li>
+              <li class="promotion-goods-item">
+                <p class="quantity-diskount">-20%</p>
+                <img src="./images/promotion/carseat.jpg" alt="product" />
+                <h3 class="cards-text main-card-text">
+                  Автокрісло Maxi-Cosi Citi Concrete grey
+                </h3>
+                <p class="price-text price-text-margin">
+                  4300 <span class="prices-span"> грн</span>
+                </p>
+                <p class="diskount-price-text">
+                  3999<span class="diskount-price-span"> грн</span>
+                </p>
+              </li>
+              <li class="promotion-goods-item">
+                <p class="quantity-diskount">-15%</p>
+                <img src="./images/promotion/stroller.jpg" alt="product" />
+                <h3 class="cards-text main-card-text">
+                  Коляска 2в1 Anex M/Type Dune mt-01Q
+                </h3>
+                <p class="price-text price-text-margin">
+                  6000 <span class="prices-span"> грн</span>
+                </p>
+                <p class="diskount-price-text">
+                  5000<span class="diskount-price-span"> грн</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="pagination-wraper">
+            <button class="load-more main-card-text">Показати ще</button>
+          </div>
+        </div>
+      </section>
+      <section class="viewed-products">
+        <div class="container">
+          <h3 class="header-title-text viewed-header">Ви переглядали</h3>
+          <div class="viewed-container">
+            <ul class="viewed-list">
+              <li class="promotion-goods-item">
+                <a href="/productsCard.html"
+                  ><p class="quantity-diskount">-15%</p>
+                  <img src="./images/promotion/stroller.jpg" alt="product" />
+                  <h3 class="cards-text main-card-text">
+                    Коляска 2в1 Anex M/Type Dune mt-01Q
+                  </h3>
+                  <p class="price-text price-text-margin">
+                    6000 <span class="prices-span"> грн</span>
+                  </p>
+                  <p class="diskount-price-text">
+                    5000<span class="diskount-price-span"> грн</span>
+                  </p></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="sending-email">
+        <div class="container">
+          <div class="sending-container">
+            <h3 class="header-title-text sending-header">
+              Отримуйте ПРОМОКОДИ ТА <br />ЕКСКЛЮЗИВНІ ПРОПОЗИЦІЇ
+            </h3>
+            <div class="sending-wraper">
+              <input
+                type="email"
+                class="sending-input"
+                placeholder="Ваш email"
+              />
+              <button type="button" class="sending-button">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#vector"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <img
+            src="./images/brands-logo/mother_and_sun.png"
+            alt="mother and sun"
+            class="mother-png"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="contacts-section">
+        <div class="container">
+          <div class="contact-wrap">
+            <address>
+              <ul class="contacts-list">
+                <li class="contacts-item">
+                  <a
+                    href="+380631284609"
+                    class="contacts-link contacts-underline"
+                    >(063)128-46-09</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a href="bubu.shop2018@gmail.com" class="contacts-link"
+                    >bubu.shop2018@gmail.com</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a
+                    href="https://maps.app.goo.gl/KofwK4rMLrfXt6TR6"
+                    class="contacts-link"
+                    >Одеса, вул. Михайлівська 8 (щодня з 10:00 до 20:00)</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="#">
+                  <svg width="12" height="22">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="#">
+                  <svg width="20" height="20">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="#">
+                  <svg width="26" height="22">
+                    <use href="./images/sprite.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="information-section">
+        <div class="container">
+          <div class="container-wrap">
+            <div class="contacts-block">
+              <address>
+                <ul class="contacts-list">
+                  <li class="contacts-item">
+                    <a
+                      href="+380631284609"
+                      class="contacts-link contacts-underline"
+                      >(063)128-46-09</a
+                    >
+                  </li>
+                  <li class="contacts-item">
+                    <a href="bubu.shop2018@gmail.com" class="contacts-link"
+                      >bubu.shop2018@gmail.com</a
+                    >
+                  </li>
+                  <li class="contacts-item">
+                    <a
+                      href="https://maps.app.goo.gl/KofwK4rMLrfXt6TR6"
+                      class="contacts-link"
+                      >Одеса, вул. Михайлівська 8<br />
+                      (щодня з 10:00 до 20:00)</a
+                    >
+                  </li>
+                </ul>
+              </address>
+              <ul class="social-list">
+                <li class="social-item">
+                  <a href="#">
+                    <svg width="12" height="22">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#">
+                    <svg width="26" height="22">
+                      <use href="./images/sprite.svg#youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="information-container">
+              <h3 class="header-title-text header-information">Інформація</h3>
+              <ul class="information-list">
+                <li class="information-item">
+                  <a href="#" class="main-card-text white-color-text"
+                    >Про нас</a
+                  >
+                </li>
+                <li class="information-item">
+                  <a href="#" class="main-card-text white-color-text"
+                    >Контакти</a
+                  >
+                </li>
+                <li class="information-item">
+                  <a href="#" class="main-card-text white-color-text"
+                    >Доставка і оплата</a
+                  >
+                </li>
+                <li class="information-item">
+                  <a href="#" class="main-card-text white-color-text"
+                    >Повернення та обмін</a
+                  >
+                </li>
+                <li class="information-item">
+                  <a href="#" class="main-card-text white-color-text"
+                    >Політика конфеденційності</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="catalog-container">
+              <div class="catalog-container-first">
+                <h3 class="header-title-text header-catalog white-color-text">
+                  Каталог
+                </h3>
+                <ul class="catalog-list-first">
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Дитяча кімната
+                    </a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Стільці і шезлонги
+                    </a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Все для годування
+                    </a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Гігієна та догляд</a
+                    >
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Дитячі коляски
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="catalog-container-second">
+                <ul class="catalog-list-second">
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Автокрісла
+                    </a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Дитячий <br />
+                      транспорт
+                    </a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Іграшки
+                    </a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Дитячий одяг
+                    </a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="main-card-text white-color-text"
+                      >Новий товар
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="bank-wrap">
+            <p class="rights-reserved">© Bubu 2022. Всі права захищені.</p>
+            <div class="bank-container">
+              <img
+                src="./images/brands-logo/liqpay.svg"
+                alt="liqpay"
+                class="banks-img"
+              />
+              <img
+                src="./images/brands-logo/master-card.svg"
+                alt="master-card"
+                class="banks-img"
+              />
+              <img
+                src="./images/brands-logo/visa.svg"
+                alt="visa"
+                class="banks-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

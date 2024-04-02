@@ -1,0 +1,86 @@
+.sending-email > .container {
+  @include tablet {
+    display: flex;
+  }
+  @include desktop {
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+// TODO
+.sending-email {
+  background-color: var(--discount-color);
+  @include tablet {
+    background: url(../../images/background/bgTablet.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @include desktop {
+    background: url(../../images/background/bgDesk.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @include biggest {
+    background: url(../../images/background/bgBiggest.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.sending-container {
+  padding: 40px 16px;
+  @include biggest {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+}
+.sending-header {
+  margin-bottom: 20px;
+  color: white;
+  @include biggest {
+    margin-bottom: 0;
+  }
+}
+.sending-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+}
+.sending-input {
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.15);
+  width: 235px;
+  padding: 15px;
+  @include tablet {
+    width: 270px;
+  }
+}
+.sending-input::placeholder {
+  color: #fff;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  @include tablet {
+    font-size: 15px;
+  }
+}
+.sending-wraper {
+  display: flex;
+  align-items: center;
+}
+.sending-button {
+  margin-left: 15px;
+}
+.mother-png {
+  display: none;
+  @include tablet {
+    display: flex;
+    width: 345px;
+    height: 260px;
+  }
+}

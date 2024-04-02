@@ -1,0 +1,30 @@
+.slider-tablet-desk {
+  display: none;
+  @include tablet {
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+//swiper mods
+
+.swiper {
+  width: 600px;
+  height: 300px;
+  @include desktop {
+    width: 750px;
+  }
+  @include biggest {
+    width: 950px;
+  }
+}
+.swiper-slide {
+  display: flex;
+  gap: 30px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: #d03664;
+}
+

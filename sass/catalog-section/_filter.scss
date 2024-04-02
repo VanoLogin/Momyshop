@@ -1,0 +1,97 @@
+.filter-container {
+  margin-top: 20px;
+  @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.title-home {
+  color: #d03664;
+}
+.title-home-div {
+  margin-top: 30px;
+}
+.header-text {
+  margin-top: 20px;
+  @include desktop{
+     margin-top: 0px;
+  }
+}
+.btn-secondary {
+  background-color: inherit;
+  color: black;
+}
+.dropdown-menu.show {
+  background-color: inherit;
+  color: black;
+}
+// btn-sort-filter
+.btn-filter-container {
+  display: none;
+  @include tablet {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  @include desktop {
+    margin-top: 0;
+  }
+}
+.btn-sort-filter {
+  background-color: inherit;
+  text-decoration: underline;
+  &:active {
+    text-decoration: none;
+  }
+  &:hover {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+// filter input
+
+.btn-filter {
+  background-color: #d03664;
+  color: white;
+  display: flex;
+  border-radius: 5px;
+  align-items: start;
+  padding: 16px;
+  margin-top: 20px;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 23px;
+    height: 20px;
+    background-image: url("../images/svg/filter.svg");
+    background-size: cover;
+    margin-right: 5px;
+  }
+}
+.filter-wrap {
+  margin-top: 30px;
+}
+.pagination-wraper {
+  display: flex;
+  justify-content: center;
+}
+.load-more {
+  font-weight: 600;
+  color: #d03664;
+  background-color: inherit;
+  border: 1px solid #d03664;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

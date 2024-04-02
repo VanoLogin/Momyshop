@@ -1,0 +1,149 @@
+.contacts-section {
+  background-color: #aa2b51;
+  @include biggest {
+    display: none;
+  }
+}
+
+.information-section .banking-section {
+  background-color: #d03664;
+}
+.contacts-section > .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.contact-wrap {
+  padding-left: 16px;
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.contacts-link {
+  color: #fff;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  @include tablet {
+    font-size: 15px;
+  }
+}
+.contacts-underline {
+  color: #fff;
+
+  /* h_mobile */
+  font-family: Comfortaa;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  @include tablet {
+    font-size: 20px;
+  }
+}
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 15px;
+}
+.contacts-block {
+  display: none;
+  @include biggest {
+    display: block;
+    padding: 30px;
+    background-color: #aa2b51;
+    border-radius: 20px;
+  }
+}
+
+//information-section
+
+.information-section > .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.information-section {
+  background-color: #d03664;
+  color: #fff;
+}
+.information-container {
+  margin-bottom: 35px;
+  margin-left: 16px;
+}
+.header-information {
+  margin-bottom: 20px;
+}
+.information-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+//wrap tablet
+.container-wrap {
+  @include tablet {
+    display: flex;
+    gap: 50px;
+  }
+  @include biggest {
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+}
+
+//catalog section
+.catalog-section > .container {
+  padding-bottom: 40px;
+}
+.catalog-container {
+  margin-left: 16px;
+}
+.header-catalog {
+  margin-bottom: 20px;
+}
+.catalog-container-first {
+  display: inline-block;
+}
+.catalog-container-second {
+  display: inline-block;
+  margin-left: 20px;
+  @include tel {
+    margin-left: 30px;
+  }
+  @include tablet {
+    margin-left: 45px;
+  }
+}
+
+.catalog-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+//banking-section
+.bank-wrap {
+  margin-top: 35px;
+}
+.bank-container {
+  margin-left: 16px;
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+.banking-section > .container {
+  padding-bottom: 40px;
+}
+.rights-reserved {
+  margin-left: 16px;
+  color: #f3a8bf;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.banks-img {
+  width: 60px;
+  height: 30px;
+}

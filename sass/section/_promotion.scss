@@ -1,0 +1,93 @@
+.promotion {
+  margin-top: 64px;
+  margin-bottom: 80px;
+  @include tablet {
+    display: none;
+  }
+}
+
+.container-wraper {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  margin-bottom: 34px;
+}
+
+.promotion-slider-btn {
+  background-color: inherit;
+  margin-left: auto !important;
+}
+
+.promotion-goods-item {
+  max-width: 156px;
+  position: relative;
+  @include tablet {
+    max-width: 234px;
+  }
+}
+.promotion-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  @include tablet {
+    gap: 30px;
+  }
+}
+
+.sale-text {
+  color: var(--discount-color);
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 15px;
+  }
+}
+
+.promotion-goods-item > img {
+  margin-bottom: 12px;
+  border-radius: 10px;
+  width: 156px;
+  height: 156px;
+
+  @include tablet {
+    width: 200px;
+    height: 200px;
+  }
+}
+.cards-text {
+  margin-bottom: 12px;
+}
+.price-text-margin {
+  margin-bottom: 5px;
+  text-decoration: line-through;
+}
+.quantity-diskount {
+}
+
+.btn-sales {
+  margin-left: 10px;
+  border-radius: 10px;
+  background: #fff0d2;
+  padding: 5px;
+}
+.quantity-diskount {
+  position: absolute;
+
+  color: #fff;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: var(--discount-color);
+  padding: 5px;
+  border-radius: 5px;
+}
+

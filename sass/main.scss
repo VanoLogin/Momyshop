@@ -1,0 +1,31 @@
+
+@import "./utils/reset";
+@import "./utils/vars";
+@import "./utils/mixin";
+
+@import "./components/container";
+@import "./components/btn";
+@import "./components/modal";
+@import "./components/titles";
+@import "./components/burger";
+@import "./components/search-form";
+
+@import "./section/mobile-header";
+@import "./section/header";
+@import "./section/slider";
+@import "./section/sliderTabDesk";
+@import "./section/promotion";
+@import "./section/categories";
+@import "./section/brands";
+@import "./section/about";
+@import "./section/viewedProducts";
+@import "./section/sendEmail";
+@import "./section/fotter";
+
+//catalog scss
+@import "./catalog-section/filter";
+
+//products scss 
+@import "./product-section/mainHeader";
+@import "./product-section/characteristic-review";
+@import "./product-section/swiper";

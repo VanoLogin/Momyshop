@@ -1,0 +1,99 @@
+.header {
+  display: none;
+  @include biggest {
+    display: flex;
+    // position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: var(--header-color);
+  }
+}
+
+.information-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 20px;
+}
+.navigation-soc-list {
+  display: flex;
+  align-items: center;
+}
+.wraper-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  margin-top: 20px;
+}
+.navigation-soc-list > li:not(:last-child) {
+  margin-right: 20px;
+}
+.navigation-tel {
+  margin-right: 30px;
+}
+.change-lang-span {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navigation-soc-link {
+  color: #ffc5d6;
+}
+
+.navigation-list a {
+  color: #fff;
+
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.change-lang-span > span {
+  color: #fff;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.btn-join {
+  color: #fff;
+
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+  background-color: inherit;
+}
+.btn-join > a {
+  color: #ffff;
+}
+.btn-catalog {
+  background-color: #ffeaf1;
+  border-radius: 20px 20px 0px 0px;
+  color: black;
+  padding: 30px 86px 30px 30px;
+}
+.btn-catalog::before {
+  content: url(../images/svg/Menu-sroke.svg);
+  display: inline-block;
+  vertical-align: top;
+  width: 25px;
+  height: 16px;
+  margin-right: 10px;
+  fill: #d03664;
+}
+.desktop-logo {
+  margin-left: 0;
+}

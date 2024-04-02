@@ -1,0 +1,47 @@
+.brands {
+  margin-bottom: 60px;
+}
+
+.brands-wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.brands-btn {
+  margin-right: 16px;
+}
+.brands-header {
+  margin-left: 16px;
+}
+.abc {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+}
+.brands-img {
+  width: 93px;
+  height: 65px;
+}
+
+// brands-swiper
+.swiper-container {
+  width: 327px;
+  height: 100px;
+ 
+}
+
+div.swiper-3 {
+  div.swiper-slide {
+    display: flex;
+    flex-shrink: inherit;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1em;
+    outline: 0;
+    background-color: #ffffff;
+  }
+}
+.swiper-brands {
+  gap: 16px;
+}
