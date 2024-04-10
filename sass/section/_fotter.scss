@@ -1,5 +1,7 @@
 .contacts-section {
   background-color: #aa2b51;
+
+
   @include biggest {
     display: none;
   }
@@ -28,6 +30,7 @@
   line-height: normal;
   @include tablet {
     font-size: 15px;
+    
   }
 }
 .contacts-underline {

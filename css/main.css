@@ -1365,21 +1365,21 @@ div.swiper-3 div.swiper-slide {
 }
 @media screen and (min-width: 768px) {
   .sending-email {
-    background: url(../../images/background/bgTablet.svg);
+    background: url(../images/background/bgTablet.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
 @media screen and (min-width: 1000px) {
   .sending-email {
-    background: url(../../images/background/bgDesk.svg);
+    background: url(../images/background/bgDesk.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
 @media screen and (min-width: 1290px) {
   .sending-email {
-    background: url(../../images/background/bgBiggest.svg);
+    background: url(../images/background/bgBiggest.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
